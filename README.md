@@ -9,6 +9,10 @@ Kakao Desktop App Clone
 - 웹 서버들은 index파일을 먼저 찾게 되어 있다.
 - html은 수많은 tag로 이루어져 있다.
 - tag는 어떻게 정의하는가.
+    - **<name attribute = "value">Content</name>**
+    - <human gender = "male">Human</human>
+    - <dog breed = "german-shepard">Dog</dog>
+    - <title>This is the title of the document</title>
 
 2. index.html 수정
 
@@ -27,7 +31,7 @@ Kakao Desktop App Clone
   - charset은 어떤 방식으로 문서를 encoding할 건지 알려줌
   - 정말 많은 종류의 meta tag가 존재한다.
 
-  ## 2019년 01월 29일
+## 2019년 01월 29일
 
 1. index.html 수정
 - semantic tag vs. non-semantic tag
@@ -40,3 +44,17 @@ Kakao Desktop App Clone
     - id : 고유 이름이므로 공유 불가능  ex. 여권번호
     - class : 동일 속성 공유 가능   ex. 국적, 이름
     - 웹 상에서 고유의 element가 있는 경우는 거의 없기에 class를 주로 사용하게 된다.
+
+2. style.css 생성
+- css파일은 selector파트와 property파트로 이루어져 있다.
+    - selector파트는 {}을 이야기하고, 괄호 안에 무수히 많은 property가 들어갈 수 있다.
+    - selector파트에 id(#name)과 class(.name)을 추가할 수 있다.
+    - 이를 통해 tag에 속성(attribute)를 부여할 수 있다.
+- html과 css를 연결하는 방법
+    - inline : html 내부에 css파일을 넣는다.
+        - html의 head부분에 style을 넣는다.
+        - style은 css를 html파일 상단에 붙이게 하는 걸 가능케 한다.
+        - 단점 : 여러 개의 html파일에 적용할 수 없다. 다 복붙해야해. 즉, 비효율적이다.
+    - external : css파일을 따로 생성한다.
+        - 모든 html문서 head에 연결을 해야 한다.
+        - 유지/보수 때 css파일만 수정하면 된다.
