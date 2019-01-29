@@ -16,9 +16,9 @@ Kakao Desktop App Clone
 
 2. index.html 수정
 
-- <!DOCTYPE html>
-  - CHROME에게 html문서임을 알려준다.
-  - self-contained tag이므로 따로 닫아줄 필요가 없다.
+- **<!DOCTYPE html>**
+    - CHROME에게 html문서임을 알려준다.
+    - self-contained tag이므로 따로 닫아줄 필요가 없다.
 - tag는 항상 열고 닫아야 한다
 - <head></head>
     - 유저가 볼 수 없다.
