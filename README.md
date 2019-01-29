@@ -35,3 +35,8 @@ Kakao Desktop App Clone
     - non-semantic tag의 예로 div(의미 없음)와 span(짧은)이 있다.
         - 둘 다 tag들을 담는 container의 역할을 한다.
         - span의 경우 text를 위한(ex.title,p) container이다.
+- tag의 name
+    - tag가 같은 tag일 경우 구분을 해줘야한다. 뭐가 뭔지 모르기 때문에.
+    - id : 고유 이름이므로 공유 불가능  ex. 여권번호
+    - class : 동일 속성 공유 가능   ex. 국적, 이름
+    - 웹 상에서 고유의 element가 있는 경우는 거의 없기에 class를 주로 사용하게 된다.
