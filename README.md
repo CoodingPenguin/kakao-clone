@@ -26,3 +26,12 @@ Kakao Desktop App Clone
   - 추가로 제공하는 브라우저를 위한 정보
   - charset은 어떤 방식으로 문서를 encoding할 건지 알려줌
   - 정말 많은 종류의 meta tag가 존재한다.
+
+  ## 2019년 01월 29일
+
+1. index.html 수정
+- semantic tag vs. non-semantic tag
+    - semantic은 의미가 있는 tag, non-semantic은 의미가 없는 tag
+    - non-semantic tag의 예로 div(의미 없음)와 span(짧은)이 있다.
+        - 둘 다 tag들을 담는 container의 역할을 한다.
+        - span의 경우 text를 위한(ex.title,p) container이다.
