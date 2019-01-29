@@ -9,21 +9,23 @@ Kakao Desktop App Clone
 - 웹 서버들은 index파일을 먼저 찾게 되어 있다.
 - html은 수많은 tag로 이루어져 있다.
 - tag는 어떻게 정의하는가.
-    - **<name attribute = "value">Content</name>**
-    - <human gender = "male">Human</human>
-    - <dog breed = "german-shepard">Dog</dog>
-    - <title>This is the title of the document</title>
+```html
+<name attribute = "value">Content</name>
+<human gender = "male">Human</human>
+<dog breed = "german-shepard">Dog</dog>
+<title>This is the title of the document</title>
+```
 
 2. index.html 수정
 
-- **<!DOCTYPE html>**
+- !DOCTYPE html
     - CHROME에게 html문서임을 알려준다.
     - self-contained tag이므로 따로 닫아줄 필요가 없다.
 - tag는 항상 열고 닫아야 한다
-- <head></head>
+- head
     - 유저가 볼 수 없다.
     - 다만 내 웹사이트의 정보(information)만 제공할 뿐.
-- <body></body>
+-
     - 여기에 작성하고 싶은 내용(content)이 제공된다.
     - h1부터 h6까지. 오른쪽으로 갈수록 글자 크기가 작아진다.
 - meta tag
