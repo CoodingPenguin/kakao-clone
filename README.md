@@ -60,3 +60,5 @@ Kakao Desktop App Clone
     - external : css파일을 따로 생성한다.
         - 모든 html문서 head에 연결을 해야 한다.
         - 유지/보수 때 css파일만 수정하면 된다.
+- Box Model
+    - content, padding, border, margin
