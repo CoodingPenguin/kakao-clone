@@ -62,3 +62,12 @@ Kakao Desktop App Clone
         - border : 경계
         - padding : border에서 안쪽으로 있는 간격
         - margin : border에서 바깥쪽으로 있는 간격
+    - margin과 padding의 간격
+        - padding/margin-top/botton/right/left : 00px; // 각 방향
+        - padding/margin : 00px; // 모든 방향
+        - padding/margin : 00px 00px; // 첫번째는 상하, 두번째는 좌우방향 
+        - padding/margin : 00px 00px 00px 00px; // 상우하좌(↑→↓←)방향, 시계방향
+    - border
+        - width, style, color 속성 부여가 가능함
+        - border : <간격> <스타일> <색상>; // 각각 줄 수 있지만 width-style-color 순으로 한 번에 줄 수도 있음.
+
