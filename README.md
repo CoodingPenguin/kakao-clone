@@ -2,12 +2,16 @@
 
 Kakao Desktop App Clone
 
-## 2019년 01월 28일
-
-### 1. index.html 생성
+## 1. index.html
 
 - 웹 서버들은 index파일을 먼저 찾게 되어 있다.
 - html은 수많은 tag로 이루어져 있다.
+- !DOCTYPE html
+    - CHROME에게 html문서임을 알려준다.
+    - self-contained tag이므로 따로 닫아줄 필요가 없다.
+
+
+## 2. tag
 - tag는 어떻게 정의하는가.
 ```html
 <name attribute = "value">Content</name>
@@ -15,12 +19,6 @@ Kakao Desktop App Clone
 <dog breed = "german-shepard">Dog</dog>
 <title>This is the title of the document</title>
 ```
-
-### 2. index.html 수정
-
-- !DOCTYPE html
-    - CHROME에게 html문서임을 알려준다.
-    - self-contained tag이므로 따로 닫아줄 필요가 없다.
 - tag는 항상 열고 닫아야 한다
 - head
     - 유저가 볼 수 없다.
@@ -32,10 +30,6 @@ Kakao Desktop App Clone
   - 추가로 제공하는 브라우저를 위한 정보
   - charset은 어떤 방식으로 문서를 encoding할 건지 알려줌
   - 정말 많은 종류의 meta tag가 존재한다.
-
-## 2019년 01월 29일
-
-### 1. index.html 수정
 - semantic tag vs. non-semantic tag
     - semantic은 의미가 있는 tag, non-semantic은 의미가 없는 tag
     - non-semantic tag의 예로 div(의미 없음)와 span(짧은)이 있다.
@@ -47,7 +41,8 @@ Kakao Desktop App Clone
     - class : 동일 속성 공유 가능   ex. 국적, 이름
     - 웹 상에서 고유의 element가 있는 경우는 거의 없기에 class를 주로 사용하게 된다.
 
-### 2. style.css 생성
+
+## 3. style.css
 - css파일은 selector파트와 property파트로 이루어져 있다.
     - selector파트는 {}을 이야기하고, 괄호 안에 무수히 많은 property가 들어갈 수 있다.
     - selector파트에 id(#name)과 class(.name)을 추가할 수 있다.
