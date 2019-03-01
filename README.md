@@ -12,14 +12,15 @@ Kakao Desktop App Clone
 
 
 ## 2. tag
-- tag는 어떻게 정의하는가.
-```html
-<name attribute = "value">Content</name>
-<human gender = "male">Human</human>
-<dog breed = "german-shepard">Dog</dog>
-<title>This is the title of the document</title>
-```
-- tag는 항상 열고 닫아야 한다
+- tag
+    - tag는 어떻게 정의하는가.
+    ```html
+    <name attribute = "value">Content</name>
+    <human gender = "male">Human</human>
+    <dog breed = "german-shepard">Dog</dog>
+    <title>This is the title of the document</title>
+    ```
+    - tag는 항상 열고 닫아야 한다
 - head
     - 유저가 볼 수 없다.
     - 다만 내 웹사이트의 정보(information)만 제공할 뿐.
