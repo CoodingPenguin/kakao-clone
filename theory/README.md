@@ -50,7 +50,7 @@
 - `<body>` : Give contents users can see. So it's visible.
 
 ### 4. How to Add Meta Information
-We give extra information about the document to the browser by using `<meta>`. We cannot make my own meta tag. There are only some meta tags that the browser can understand.
+We give extra information about the document to the browser by using `<meta>`. These tags are just information so you can put whatever I want.
 ```html
 <!--What language a document is written-->
 <meta charset="utf-8">
@@ -73,35 +73,109 @@ To distinguish between same tags, we name those tags.
 ----
 
 ## Module 3. CSS3
+### 1. How CSS looks
+- CSS consists of **selector part** and **property part**.
+- A selector can be all tag names like `<a>`, `<footer>` and a class name or a id name.
+- We select tags we want by **selector** and change **properties** by giving values. 
+```css
+selector (id, class, tag name){
+    property-name: value;
+    property-name: value;
+    property-name: value;
+}
 ```
-## 3. style.css
-- css파일은 selector파트와 property파트로 이루어져 있다.
-    - selector파트는 {}을 이야기하고, 괄호 안에 무수히 많은 property가 들어갈 수 있다.
-    - selector파트에 id(#name)과 class(.name)을 추가할 수 있다.
-    - 이를 통해 tag에 속성(attribute)를 부여할 수 있다.
-- html과 css를 연결하는 방법
-    - inline : html 내부에 css파일을 넣는다.
-        - html의 head부분에 style을 넣는다.
-        - style은 css를 html파일 상단에 붙이게 하는 걸 가능케 한다.
-        - 단점 : 여러 개의 html파일에 적용할 수 없다. 다 복붙해야해. 즉, 비효율적이다.
-    - external : css파일을 따로 생성한다.
-        - 모든 html문서 head에 연결을 해야 한다.
-        - 유지/보수 때 css파일만 수정하면 된다.
-- 많은 element들은 box이다.
-    - box의 구성
-        - content
-        - border : 경계
-        - padding : border에서 안쪽으로 있는 간격
-        - margin : border에서 바깥쪽으로 있는 간격
-    - margin과 padding의 간격
-        - padding/margin-top/botton/right/left : 00px; // 각 방향
-        - padding/margin : 00px; // 모든 방향
-        - padding/margin : 00px 00px; // 첫번째는 상하, 두번째는 좌우방향 
-        - padding/margin : 00px 00px 00px 00px; // 상우하좌(↑→↓←)방향, 시계방향
-    - border
-        - width, style, color 속성 부여가 가능함
-        - border : <간격> <스타일> <색상>; // 각각 줄 수 있지만 width-style-color 순으로 한 번에 줄 수도 있음.
+
+### 2. Mixing CSS with HTML
+- **inline** : Add `<style>` tag in `<head>`. But if you have many pages and want to change something, you have to change all codes in `<style>`. It's very inefficient.
+```html
+<!--index.html-->
+<head>
+    ...
+    <style>
+        h1{
+            font-size:35px;
+        }
+    </style>
+    ...
+</head>
 ```
+- **external** : Make a `styles.css` file and link into all related html files. Then if you change somthing, all changes are applied.
+```html
+<!--index.html-->
+<head>
+    ...
+    <link rel="stylesheet" href="styles.css">
+    ...
+</head>
+```
+```css
+/*styles.css*/
+h1{
+    font-size:35px;
+}
+```
+
+### 3. Box Model 
+<img src="./img/box-model.png" width=80%>
+
+The box model consists of `content`,`padding`,`border`, `margin`.
+* `padding` : space from the border of the box to the inside.
+* `margin` : space from the border of the box to the outside.
+* You can change width, style, color of `border`.
+```css
+/*padding and margin*/
+/*apply to each directions or clockwise*/
+.box1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.box2{
+    padding: 10px 20px 10px 20px;
+}
+/*apply to all directions*/
+.box3{
+    padding: 10px;
+}
+/*apply to top/bottom and left/right*/
+.box4{
+    padding: 10px 20px;
+}
+```
+```css
+/*border*/
+/*apply to each properties*/
+.box{
+    border-width: 5px;
+    border-color: red;
+    border-style: dashed;
+}
+/*apply to each properties in one line*/
+.box2{
+    border: 5px dashed red;
+}
+```
+
+### 4. Inline vs Block vs Inline Block
+```css
+.box{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: block;
+}
+```
+- A box should be a **block** or **inline-block**. The default value is **block**.
+- `block` : Blocks do not allow elements next to them.
+- `inline-block` : Inline blocks allow elements next to them.
+- `inline` : It removes all properties. It's not a box anymore. It's just **text**. So only the length of content exists.
+
+### 5. Position Property
+- `position: static` : default value. 
+- `position: fixed` : It stays with me while I scroll. You can change its location by changing `top`, `bottom`, `left`, `right` values.
+- `position: absolute` : It looks for the closest `relative` parent. If not, it aligns to the `<body>`
 
 ----
 
