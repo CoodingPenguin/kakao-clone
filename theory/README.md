@@ -1,31 +1,33 @@
 # Kakao Clone Theory
 
-[Module 1. The Tools of a Web Developer](#Module-1.-The-Tools-of-a-Web-Developer)
+[Module 1. The Tools of a Web Developer](#module-1.-the-tools-of-a-web-developer)
 
-1. [What Git is](#1.-What-Git-is)
-2. [Terminologies in Git](#2.-Terminologies-in-Git)
-3. [Git vs Github](#3.-Git-vs-Github)
-4. [HTML and CSS](#4.-HTML-and-CSS)
+1. [What Git is](#1.-what-git-is)
+2. [Terminologies in Git](#2.-terminologies-in-git)
+3. [Git vs Github](#3.-git-vs-github)
+4. [HTML and CSS](#4.-html-and-css)
 
-[Module 2. HTML5](#Module-2.-HTML5)
-1. [What HTML is](#1.-What-HTML-is)
-2. [What a tag is](#2.-What-a-tag-is)
-3. [How HTML document looks](#3.-How-HTML-document-looks)
-4. [How to Add Meta Information](#4.-How-to-Add-Meta-Information)
-5. [Semantic vs NonSemantic Tags](#5.-Semantic-vs-NonSemantic-Tags)
-6. [Class and ID](#6.-Class-and-ID)
+[Module 2. HTML5](#module-2.-html5)
+1. [What HTML is](#1.-what-html-is)
+2. [What a tag is](#2.-what-a-tag-is)
+3. [How HTML document looks](#3.-how-html-document-looks)
+4. [How to Add Meta Information](#4.-how-to-add-meta-information)
+5. [Semantic vs NonSemantic Tags](#5.-semantic-vs-nonsemantic-tags)
+6. [Class and ID](#6.-class-and-id)
 
-[Module 3. CSS3](#Module-3.-CSS3)
-1. [How CSS looks](#1.-How-CSS-looks)
-2. [Mixing CSS with HTML](#2.-Mixing-CSS-with-HTML)
-3. [Box Model](#3.-Box-Model)
-4. [Inline vs Block vs Inline Block](#4.-Inline-vs-Block-vs-Inline-Block)
-5. [Position Property](#5.-Position-Property)
-6. [Flexbox](#6.-Flexbox)
-7. [Pseudo Selectors](#7.-Pseudo-Selectors)
-8. [Element States](#8.-Element-States)
+[Module 3. CSS3](#module-3.-css3)
+1. [How CSS looks](#1.-how-css-looks)
+2. [Mixing CSS with HTML](#2.-mixing-css-with-html)
+3. [Box Model](#3.-box-model)
+4. [Inline vs Block vs Inline Block](#4.-inline-vs-block-vs-inline-block)
+5. [Position Property](#5.-position-property)
+6. [Flexbox](#6.-flexbox)
+7. [Pseudo Selectors](#7.-pseudo-selectors)
+8. [Element States](#8.-element-states)
 
-[Module 4. Advanced CSS](#Module-4.-Advanced-CSS)
+[Module 4. Advanced CSS](#module-4.-advanced-css)
+1. [Transitions](#1.-transitions)
+2. [Transformations](#2.-transformations)
 
 ---
 
@@ -297,3 +299,32 @@ input[required="required"] {
 ---
 
 ## Module 4. Advanced CSS
+
+### 1. Transitions
+We use transitions to animate the CSS changes of an element. You have to write a transition property like `transition: [property] [time] ease-in-out`. You can see more about transition in [here](https://developer.mozilla.org/en-US/docs/Web/CSS/transition).
+```css
+.box{
+  color: white;
+  background-color: red;
+  transition: all 4s ease-in-out;
+}
+.box:hover{
+  color: black;
+  background-color: yellow;
+}
+```
+
+### 2. Transformations
+By using transformations, you can rotate, translate, skew an element. But if you want to animate a transformation, you should use a transition. You can see CSS transform examples in [here](https://developer.mozilla.org/en-US/docs/Web/CSS/transform).
+```css
+.box{
+  background-color: white;
+  transition: transform 4s ease-in-out;
+}
+.box:hover{
+  transform: rotate(1turn) scale(2, 2);
+}
+```
+
+
+[go back to the top](#kakao-clone-theory)
