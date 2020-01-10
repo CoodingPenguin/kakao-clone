@@ -239,8 +239,9 @@ The box model consists of `content`,`padding`,`border`, `margin`.
 ### 6. Flexbox
 
 We use **Flexbox** to align elements automatically. There are some properties to align elements. To make flex boxes, we have to make a container called **father** and make it flex. Also a flex children can also be a flex father at the same time.
+
 |Properties|What it does|Extra Info|
-|:--:|:--|:--|
+|:-----:|:-----|:-----|
 |`justify-content`|In default, it aligns elements horizontally.|If `flex-direction: column`, it aligns them vertically.|
 |`align-items`|In default, it aligns elements vertically.|If `flex-direction: column`, it aligns them horizontally.|
 |`flex-direction`|It determines the direction that elements should be aligned.|• `row` is **left-to-right**, `row-reverse` is **right-to-left**.<br/>• `column` is **top-to-bottom**, `column-reverse` is **bottom-to-top**.</br>• If we use value including `reverse`, the start and end of elements are reversed.|
