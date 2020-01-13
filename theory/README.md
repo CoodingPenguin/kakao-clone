@@ -28,6 +28,8 @@
 [Module 4. Advanced CSS](#module-4-advanced-css)
 1. [Transitions](#1-transitions)
 2. [Transformations](#2-transformations)
+3. [Animations](#3-animations)
+4. [Media Queries](#4-media-queries)
 
 ---
 
@@ -327,5 +329,45 @@ By using transformations, you can rotate, translate, skew an element. But if you
 }
 ```
 
+### 3. Animations
+1. You can make animations by using `@keyframes name {}`. 
+  * The default keyframes is `from-to` and you can add keyframes as many as you want. 
+  * For example, if you want to three keyframes, you just set `0%-50%-100%`. 
+2. You add `animation` property to the element you want to put.
+```css
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: 5s scaleAndRotateSquare infinite ease-in-out;
+}
+@keyframes scaleAndRotateSquare{
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: rotate(1turn) scale(.5, .5);
+        color:white;
+    }
+    100%{
+        transform: none;
+        color:blue;
+    }
+}
+```
+
+### 4. Media Queries
+You can adopt to a change on the browser's size by using media queries. It's very useful in mobile.
+```css
+body{
+    background-color: greenyellow;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px){
+    body{
+        background-color: blue;
+    }
+}
+```
 
 [go back to the top](#kakao-clone-theory)
