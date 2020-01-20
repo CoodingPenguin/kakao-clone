@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  background-color: black;
+  padding: 40px 20px;
+}
+
+.item {
+  background-color: white;
+  width: 380px;
+  height: 435px;
+  border-radius: 10px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.item .item__image {
+  width: 100%;
+}
+
+.item .item__row i {
+  color: #fdbf4f;
+}
+
+.item .item__reviews {
+  color: #a6aab1;
+}
+
+.item .item_score {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
