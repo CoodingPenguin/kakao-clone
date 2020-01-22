@@ -23,3 +23,29 @@
     display: flex;
   }
 }
+
+.smallScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #91fc06;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.5;
+  padding: 0px 20px;
+  display: none;
+  z-index: 5;
+}
+
+@media screen and (max-height: 400px) {
+  .smallScreen {
+    display: flex;
+  }
+}

@@ -13,46 +13,48 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Friends | Kakao Clone</title>
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:54 </span>
+  <body class="friends-body">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">13:54 </span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
-    </div>
-    <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">Friends</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
+      <header class="header">
+        <div class="header__header-column">
+          <h1 class="header__title">Friends</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
 
-        <span class="header__icon">
-          <a href="settings.html">
-            <i class="fas fa-cog"></i>
-          </a>
-        </span>
-      </div>
-    </header>
+          <span class="header__icon">
+            <a href="settings.html">
+              <i class="fas fa-cog"></i>
+            </a>
+          </span>
+        </div>
+      </header>
+    </div>
     <main class="friends">
       <header class="friends__header">
         <div class="friends__friend friend">
           <div class="friend__column">
-            <img src="img/myavatar.jpg" class="g-avatar friend__avatar" />
+            <img src="img/my-avatar.jpg" class="g-avatar friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">
                 코딩하는펭귄
               </span>
               <span class="friend__status">
-                당신은 펭수 버프를 받았습니다!
+                건강한 개발자가 되자🏃‍♀️
               </span>
             </div>
           </div>
@@ -62,7 +64,7 @@
         <h5 class="friends__title">Plus friend</h5>
         <div class="friends__friend friend">
           <div class="friend__column">
-            <img src="img/avatar.jpg" class="friend__avatar" />
+            <img src="img/plus-friend.jpg" class="friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">
                 Plus Friend
@@ -72,8 +74,8 @@
         </div>
       </div>
       <ul class="friends__list">
-        <h5 class="friends__title">Friends 14</h5>
-        <li class="friends__friend friend friend--lg">
+        <h5 class="friends__title">Friends 7</h5>
+        <li class="friends__friend friend real-friend">
           <div class="friend__column">
             <img src="img/avatar.jpg" class="friend__avatar" />
             <div class="friend__content">
@@ -88,7 +90,101 @@
           <div class="friend__column">
             <div class="friend__now-listening">
               <span>
-                오마이걸 - 불꽃놀이
+                Mr.Blue Sky - Electric Li...
+              </span>
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend real-friend">
+          <div class="friend__column">
+            <img src="img/avatar-2.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                펭수
+              </span>
+              <span class="friend__status">
+                잘 쉬는 게 혁신이야
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend real-friend">
+          <div class="friend__column">
+            <img src="img/avatar-3.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                프로도
+              </span>
+              <span class="friend__status">
+                어렸을 때는 참 커엽구만
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend real-friend">
+          <div class="friend__column">
+            <img src="img/avatar-4.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                김성규
+              </span>
+              <span class="friend__status">
+                장성규 잘생겼엉
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend real-friend">
+          <div class="friend__column">
+            <img src="img/avatar-5.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                박민성
+              </span>
+              <span class="friend__status">
+                2019.12.03
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening">
+              <span>
+                이등병의 편지 - 김광석
+              </span>
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend real-friend">
+          <div class="friend__column">
+            <img src="img/avatar-6.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                존예진
+              </span>
+              <span class="friend__status">
+                고기국수 좋앙
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend real-friend">
+          <div class="friend__column">
+            <img src="img/avatar-7.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                이규진
+              </span>
+              <span class="friend__status">
+                방탈출 Flex
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening">
+              <span>
+                FLEX - 키드밀리
               </span>
               <i class="fas fa-play"></i>
             </div>
@@ -121,7 +217,10 @@
       </ul>
     </nav>
     <div class="bigScreen">
-      <span class="bigScreen__text">Please make your screen small!</span>
+      <span class="bigScreen__text">Your screen width is too wide!😥</span>
+    </div>
+    <div class="smallScreen">
+      <span class="smallScreen__text">Your screen height is too small!😥</span>
     </div>
   </body>
 </html>
