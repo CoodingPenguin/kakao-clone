@@ -13,37 +13,40 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>More | Kakao Clone</title>
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">9:24</span>
+  <body class="more-body">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">9:24</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+      <header class="header">
+        <div class="header__header-column">
+          <h1 class="header__title">More</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-qrcode"></i>
+          </span>
+          <span class="header__icon">
+            <a href="settings.html">
+              <i class="fas fa-cog"></i>
+            </a>
+          </span>
+        </div>
+      </header>
     </div>
-    <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">More</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-qrcode"></i>
-        </span>
-        <span class="header__icon">
-          <a href="settings.html">
-            <i class="fas fa-cog"></i>
-          </a>
-        </span>
-      </div>
-    </header>
+
     <main class="more">
       <header class="more__header">
         <div class="friends__friend friend">
@@ -54,12 +57,30 @@
                 코딩하는펭귄
               </span>
               <span class="friend__status">
-                unodostre@naver.com
+                coodingpenguin@naver.com
               </span>
             </div>
           </div>
           <div class="friend__column">
             <i class="far fa-comment-alt fa-2x"></i>
+          </div>
+        </div>
+        <div class="more__kakaopay">
+          <div class="kakaopay__column">
+            <div class="kakaopay__money">
+              <span class="kakaopay__kakao">
+                <i class="fab fa-kickstarter"></i>
+                <span class="kakao__pay">pay</span>
+              </span>
+              <span class="kakaopay__remain">
+                7,200
+              </span>
+            </div>
+          </div>
+          <div class="kakaopay__column">
+            <span class="kakaopay__send">Send</span>
+            <span class="kakaopay__separate">|</span>
+            <span class="kakaopay__pay">Pay</span>
           </div>
         </div>
         <ul class="more__btn-list">
