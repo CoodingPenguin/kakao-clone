@@ -13,32 +13,35 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Settings | Kakao Clone</title>
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">9:24</span>
+  <body class="settings-body">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">9:24</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+      <header class="header">
+        <div class="header__header-column">
+          <a href="more.html" class="header__back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1 class="header__title">Settings</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+      </header>
     </div>
-    <header class="header">
-      <div class="header__header-column">
-        <a href="more.html" class="header__back-btn">
-          <i class="fas fa-arrow-left"></i>
-        </a>
-        <h1 class="header__title">Settings</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-      </div>
-    </header>
+
     <main class="settings">
       <section class="settings__sections">
         <ul class="settings__list">
@@ -58,25 +61,45 @@
             </span>
             <span class="settings__title">Friends</span>
           </li>
+          <li class="settings__setting">
+            <span class="settings__icon">
+              <i class="far fa-comment"></i>
+            </span>
+            <span class="settings__title">Chats</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icon">
+              <i class="far fa-comment-alt"></i>
+            </span>
+            <span class="settings__title">SMS Messages</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icon">
+              <i class="fas fa-adjust"></i>
+            </span>
+            <span class="settings__title">Display</span>
+          </li>
         </ul>
       </section>
       <section class="settings__sections">
         <ul class="settings__list">
           <li class="settings__setting">
-            <span class="settings__icon"><i class="fas fa-lock"></i> </span>
-            <span class="settings__title">Privacy</span>
+            <span class="settings__icon">
+              <i class="fas fa-phone"></i>
+            </span>
+            <span class="settings__title">Call</span>
           </li>
           <li class="settings__setting">
             <span class="settings__icon">
-              <i class="far fa-bell"></i>
+              <i class="far fa-star"></i>
             </span>
-            <span class="settings__title">Notifications</span>
+            <span class="settings__title">Gamestar</span>
           </li>
           <li class="settings__setting">
             <span class="settings__icon">
-              <i class="far fa-user"></i>
+              <i class="fas fa-ellipsis-h"></i>
             </span>
-            <span class="settings__title">Friends</span>
+            <span class="settings__title">Advanced Features</span>
           </li>
         </ul>
       </section>
