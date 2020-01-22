@@ -9,17 +9,17 @@
     0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
-.chats-body {
+.chatting-body {
   padding: 10px 0px;
   padding-top: 100px;
 }
 
-.chats-body .header,
-.chats-body .status-bar {
+.chatting-body .header,
+.chatting-body .status-bar {
   padding: 0px 20px;
 }
 
-.chats-body {
+.chatting-body {
   background-image: url("../img/chatBg.png");
   min-height: 120vh;
 }
