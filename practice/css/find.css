@@ -1,5 +1,31 @@
-.find {
+.find-body .header-wrapper {
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  width: 100%;
+  padding: 5px 0px;
+  background-color: white;
+  box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.find-body {
+  padding: 10px 0px;
+  padding-top: 90px;
+}
+
+.find-body .header,
+.find-body .status-bar {
+  padding: 0px 20px;
+}
+
+.find-body {
+  min-height: 120vh;
+}
+
+.find-body .find {
   margin-top: 50px;
+  padding: 0px 10px;
 }
 
 .find .find__header-list {
