@@ -22,6 +22,12 @@
   width: 60px;
 }
 
+.friends__avatar.group4-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+}
+
 .friend .friend__column {
   display: flex;
   align-items: center;
@@ -31,14 +37,19 @@
   margin-right: 15px;
 }
 
-.friend__content .friend__name {
+.friend__content > .friend__name {
   display: block;
+  margin-bottom: 5px;
+}
+
+.friend__content > .friend__group {
   margin-bottom: 5px;
 }
 
 .friend__content .friend__status,
 .friend__content .friend__bottom-text,
-.friend .chat__timestamp {
+.friend .chat__timestamp,
+.friend .friend__count {
   opacity: 0.6;
 }
 
@@ -49,6 +60,30 @@
 .friend__content .friend__status,
 .friend .chat__timestamp {
   font-size: 12px;
+}
+
+.chat .friend__column:last-child {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.chat .chat__remain.unread {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: white;
+  background-color: #dc5d46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat .chat__remain-count {
+  font-weight: bold;
+  font-size: 10px;
 }
 
 .friend .friend__now-listening {

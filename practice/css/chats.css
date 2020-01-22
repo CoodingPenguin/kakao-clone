@@ -24,10 +24,19 @@
 }
 
 .chats-body .chats {
-  margin-bottom: 50px;
+  margin-bottom: 38px;
   padding: 0px 10px;
 }
 
 .chats-body .chats__chat {
   padding-bottom: 20px;
+}
+
+.chats-body .group-avatar {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 15px;
 }
